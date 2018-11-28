@@ -1,33 +1,45 @@
-/* General */
+/* ---------------General */
 html{
     font-size: 62.5%;
 }
 
 h1{
     font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #575859;
+    padding-left: 20%;
 }
 
 p{
     font-family: 'Nunito', sans-serif;
 }
 
-/* Découpage horizontal et backgrounds*/
+/* ---------------Découpage horizontal et backgrounds*/
+/* Couleur d'un background sur deux */
 .container:nth-child(odd){
     background-color: #f0f6ff;
 }
 
-/* La zone des articles */
+/* ---------------Le titre */
+/* Barre jaune au dessus du titre */
+span{
+    border-top: solid;
+    border-color: #ffd800;
+}
+
+/* ---------------La zone des articles */
+/* Affichage flexbox centré des articles */
 .articles{
-    max-width: 1100px;
     display: flex;
+    max-width: 60%;
     align-items: center;
     justify-content: center;
     padding: 50px;
+    margin: auto;
 }
 
-/* Les articles */
+/* ---------------Les articles */
+/* Cadre et taille des articles */
 article{
     border-color: #ffd800;
     border-style: solid;
@@ -38,45 +50,62 @@ article{
     position:relative;
 }
 
+/* Disposition du contenu des articles */
 article:nth-child(n+2){
     display: flex;
     flex-direction: column;
 }
 
+/* Taille et position z des images des articles */
 article:nth-child(n+2) img{
     width: 160px;
     height: 160px;
     z-index:1
 }
 
+/* texte et background des articles */
 article:nth-child(n+2) p {
     background-color: #2f374b;
     color: #ffffff;
     position:absolute;
     bottom: -13px;
-    width:160px;
+    width:150px;
     z-index:2;
     font-size: 1.3rem;
-    padding: 7px 0 7px 0;
+    padding: 7px 5px 7px 5px;
 }
 
+/* Disposition du contenu et background des articles jaunes */
 article:first-of-type{
     background-color: #ffd800;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     flex-direction: column;
     align-items: center;
 }
 
+/* Taille des logos des articles jaunes */
 article:first-of-type img{
-    height: auto;
-    width: 50px;
+    width: 80px;
+    height: 80px;
 }
 
+/* Taille du texte des articles jaunes */
 article:first-of-type p{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
+.hz_line{
+    width: 90px;
+    border: 1px solid #2F374B;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+
+/*  */
 article:first-of-type span{
 
 }
+
+
