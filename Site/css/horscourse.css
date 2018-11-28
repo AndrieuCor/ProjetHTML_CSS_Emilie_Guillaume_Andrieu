@@ -1,0 +1,47 @@
+/* General */
+html{
+    font-size: 62.5%;
+}
+
+h1{
+    font-family: 'Nunito', sans-serif;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* backgrounds */
+.container:nth-child(odd){
+    background-color: #f0f6ff;
+}
+
+/* articles */
+.articles{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+/* Combiner avec en dessous */
+article:nth-child(n+2) img{
+    width: 200px;
+    height: 200px;
+}
+
+/* Combiner avec au dessus */
+article{
+    width: 200px;
+    height: 200px;   
+}
+
+article:first-of-type{
+    background-color: #ffd800;
+}
+
+article{
+    border-color: #ffd800;
+    border-style: solid;
+    border-width: 7px;
+}
